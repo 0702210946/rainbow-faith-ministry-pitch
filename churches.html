@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Churches</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .church-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .church-card {
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .church-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .church-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .church-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .church-card p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  .church-card p strong {
+    color: #007BFF;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .church-card {
+      width: 100%;
+    }
+  }
+  
+</style>
+<body>
+  <header>
+    <h1>Our Churches</h1>
+    <p>Explore the churches under our evangelist and learn about their unique histories.</p>
+  </header>
+
+  <section class="church-container">
+    <div class="church-card">
+      <img src="church1.jpg" alt="Church Image">
+      <h2>Church of Hope</h2>
+      <p><strong>Location:</strong> New York, NY</p>
+      <p><strong>Pastor:</strong> John Doe</p>
+      <p><strong>History:</strong> Established in 1985, Church of Hope has been serving the community with a mission to bring faith and light to all...</p>
+    </div>
+
+    <div class="church-card">
+      <img src="church2.jpg" alt="Church Image">
+      <h2>Faith Community Church</h2>
+      <p><strong>Location:</strong> Dallas, TX</p>
+      <p><strong>Pastor:</strong> Sarah Lee</p>
+      <p><strong>History:</strong> Faith Community Church was founded in 1995 by Pastor Sarah Lee. The church has grown to become a beacon of faith...</p>
+    </div>
+
+    <!-- Add more churches as needed -->
+  </section>
+
+</body>
+</html>

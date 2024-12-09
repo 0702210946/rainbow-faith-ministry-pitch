@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Rainbow Faith Ministry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#intro {
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+}
+
+#donation-options {
+    margin-top: 30px;
+}
+
+.donation-tier {
+    margin-bottom: 10px;
+}
+
+#custom-amount {
+    margin-left: 10px;
+    padding: 5px;
+    width: 100px;
+}
+
+#donation-form h2 {
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"], select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Support Our Mission</h1>
+        <p>Your Generosity Fuels Our Ministry</p>
+    </header>
+
+    <section id="intro">
+        <p>At Rainbow Faith Ministry, every donation helps us spread hope, love, and faith to more people. Your support enables us to host more events, expand our outreach programs, and keep our doors open to all who seek spiritual guidance.</p>
+        <blockquote>
+            "Thanks to Rainbow Faith Ministry, I found a community where I belong. Your donations truly make a difference." – Jane Doe
+        </blockquote>
+    </section>
+
+    <section id="donation-options">
+        <h2>Choose Your Donation Amount</h2>
+        <div class="donation-tier">
+            <input type="radio" id="amount25" name="donation-amount" value="25">
+            <label for="amount25">$25 - Supplies for one Sunday School class</label>
+        </div>
+        <div class="donation-tier">
+            <input type="radio" id="amount50" name="donation-amount" value="50">
+            <label for="amount50">$50 - Support our community outreach programs</label>
+        </div>
+        <div class="donation-tier">
+            <input type="radio" id="amount100" name="donation-amount" value="100">
+            <label for="amount100">$100 - Keep our online services running smoothly</label>
+        </div>
+        <div class="donation-tier">
+            <input type="radio" id="amountCustom" name="donation-amount" value="custom">
+            <label for="amountCustom">Custom Amount:</label>
+            <input type="text" id="custom-amount" placeholder="$0.00">
+        </div>
+    </section>
+
+    <section id="donation-form">
+        <h2>Donation Form</h2>
+        <form action="submit-contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="recurring">Make this a recurring donation:</label>
+            <select id="recurring" name="recurring">
+                <option value="one-time">One-time</option>
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="annually">Annually</option>
+            </select>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="credit-card">Credit/Debit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="M-Pesa">M-Pesa</M-Pesa></option>
+                <option value="Airtel Money">Airtel Money</option>
+            </select>
+
+            <label for="purpose">Donation Purpose (Optional):</label>
+            <input type="text" id="purpose" name="purpose">
+
+            <label>
+                <input type="checkbox" name="subscribe" checked> Subscribe to our newsletter
+            </label>
+
+            <button type="submit">Make a Difference</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Thank you for your support! <a href="contact.html">Contact us</a> for any questions about your donation.</p>
+        <p>&copy; 2024 Rainbow Faith Ministry. All rights reserved.</p>
+    </footer>
+</body>
+</html>

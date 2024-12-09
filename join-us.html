@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Rainbow Faith Ministry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #007bff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    header p {
+        margin: 5px 0 0;
+    }
+    
+    section {
+        padding: 20px;
+        margin: 10px auto;
+        max-width: 800px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #intro {
+        text-align: center;
+    }
+    
+    blockquote {
+        font-style: italic;
+        color: #555;
+        margin: 20px 0;
+    }
+    
+    #donation-options {
+        margin-top: 30px;
+    }
+    
+    .donation-tier {
+        margin-bottom: 10px;
+    }
+    
+    #custom-amount {
+        margin-left: 10px;
+        padding: 5px;
+        width: 100px;
+    }
+    
+    #donation-form h2 {
+        margin-top: 40px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin: 10px 0 5px;
+    }
+    
+    input[type="text"], input[type="email"], select {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+    }
+    
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+    }
+    
+    footer a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>Join Our Community</h1>
+        <p>Be a part of Rainbow Faith Ministry</p>
+    </header>
+
+    <section id="join-us">
+        <h2>Become a Member</h2>
+        <p>Fill out the form below to join our community and get involved in our activities.</p>
+
+        <form action="submit-join-us.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="interest">Area of Interest:</label>
+            <select id="interest" name="interest" required>
+                <option value="">Select an area...</option>
+                <option value="worship">Worship Team</option>
+                <option value="outreach">Community Outreach</option>
+                <option value="youth">Youth Ministry</option>
+                <option value="events">Event Planning</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Why Do You Want to Join Us?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Share your story..." required></textarea>
+
+            <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe" checked> Subscribe to our newsletter
+            </label>
+
+            <button type="submit">Join Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Thank you for your interest in Rainbow Faith Ministry! <a href="contact.html">Contact us</a> for any questions.</p>
+        <p>&copy; 2024 Rainbow Faith Ministry. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Rainbow Faith Ministry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* Resetting some default styles */
+  body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* General Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #6a5acd;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin: 20px 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  .sermons-hero {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #7f00ff;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+
+  .sermons-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .sermons-hero p {
+    font-size: 1.2rem;
+  }
+
+  .sermon-list {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .sermon-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+
+  .sermon-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .sermon-item p {
+    color: #666;
+    line-height: 1.8;
+  }
+
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+
+  .read-more:hover {
+    background-color: #555;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+  }
+
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .social-media a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 40px;
+    transition: transform 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+
+  .social-media a:hover {
+    transform: scale(1.1);
+    color: #6a5acd; /* Hover color to match your website theme */
+  }
+</style>
+<body>
+  <header>
+    <h1>Rainbow Faith Ministry</h1>
+  </header>
+
+  <section class="contact-hero">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out with any questions, comments, or prayer requests.</p>
+  </section>
+
+  <section class="contact-info">
+    <h2>Get in Touch</h2>
+    <p><strong>Address:</strong> 123 Faith Lane, Spiritual City, SC 12345</p>
+    <p><strong>Phone:</strong> (+254) 702210946</p>
+    <p><strong>Email:</strong> <a href="https://mail.google.com/mail/u/0/#inbox">kenyanzap08@gmail.com</a></p>
+  </section>
+
+  <section class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form action="submit-contact.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" value="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <div class="social-media">
+    <a href="https://www.facebook.com/RainbowFaithMinistry" target="_blank" aria-label="Facebook">
+      <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a href="https://www.twitter.com/RainbowFaithMinistry" target="_blank" aria-label="Twitter">
+      <i class="fa-brands fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/RainbowFaithMinistry" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://www.youtube.com/RainbowFaithMinistry" target="_blank" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/RainbowFaithMinistry" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/RainbowFaithMinistry" target="_blank" aria-label="LinkedIn">
+    <i class="fa-brands fa-x-twitter"></i>
+</a>
+<a href="https://www.linkedin.com/company/RainbowFaithMinistry" target="_blank" aria-label="LinkedIn">
+  <i class="fa-brands fa-telegram"></i>
+</a>
+<a href="https://www.linkedin.com/company/RainbowFaithMinistry" target="_blank" aria-label="LinkedIn">
+  <i class="fa-brands fa-square-whatsapp"></i>
+</a>
+  
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Rainbow Faith Ministry. All rights reserved.</p>
+  </footer>
+</body>
+</html>

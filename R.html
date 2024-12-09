@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Faith Ministry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* Resetting some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #6a5acd;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #7f00ff;
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+.intro {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.intro p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.highlight {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.highlight h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.highlight p {
+  color: #666;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px 0;
+  background: #333;
+  color: #fff;
+}
+button {
+  display: none;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Rainbow Faith Ministries</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li onclick="
+            window.location.href = 'about.html'
+            "><a href="#">About Us</a></li>
+            <li onclick="
+               window.location.href = 'mission.html'
+            "><a href="#">Our Mission</a></li>
+            <li onclick="
+            window.location.href = 'sermon.html'
+            "><a href="#">Sermons</a></li>
+            <li onclick="
+            window.location.href = 'churches.html'
+            "><a href="#">Our Churches</a></li>
+            <li onclick="
+            window.location.href = 'contact.html'
+            "><a href="#">Contact</a></li>
+          <li onclick="
+            window.location.href = 'donatte.html'
+            "><a href="#">Donate</a></li>            
+        </ul>
+        <button onclick="logout()">Logout</button>
+
+<script>
+  function logout() {
+    localStorage.removeItem('isLoggedIn');
+    window.location.href = 'password.html';
+  }
+</script>
+
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to Rainbow Faith Ministries</h2>
+        <p>Spreading the love and faith of God to all corners of the world.</p>
+        <a href="join-us.html" class="cta-button">Join Us</a>
+    </section>
+
+    <section class="intro">
+        <h2>Who We Are</h2>
+        <p>Rainbow Faith Ministry is a community of believers dedicated to living out the teachings of Jesus Christ. Our church is a place where you can grow in faith, find spiritual support, and be part of a loving community.</p>
+    </section>
+
+    <section class="highlights">
+        <div class="highlight">
+            <h3>Our Services</h3>
+            <p>Join us every Sunday for worship and fellowship. Our services are designed to inspire and uplift, helping you connect with God and others.</p>
+        </div>
+        <div class="highlight">
+            <h3>Upcoming Events</h3>
+            <p>Stay updated with our events, from community outreach programs to special worship services and more.</p>
+        </div>
+        <div class="highlight">
+            <h3>Get Involved</h3>
+            <p>There are many ways to get involved at Rainbow Faith Ministry. Whether through volunteering, joining a small group, or participating in our outreach programs, there’s a place for you.</p>
+        </div>
+    </section>
+      
+    <footer>
+        <p>&copy; 2024 Rainbow Faith Ministry. All rights reserved.</p>
+    </footer>
+    <script>
+      window.onload = function() {
+        let isLoggedIn = localStorage.getItem('isLoggedIn');
+        
+        if (!isLoggedIn || isLoggedIn !== 'true') {
+          window.location.href = 'password.html';
+        } else {
+          document.querySelector('button').style.display = 'block';
+        }
+      }
+      
+      localStorage.setItem('isLoggedIn', 'true');
+localStorage.setItem('userRole', role);
+let isLoggedIn = localStorage.getItem('isLoggedIn');
+if (!isLoggedIn || isLoggedIn !== 'true') {
+  window.location.href = 'password.html';
+}
+
+</body>
+</html>
